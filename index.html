@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Site dos Pros 😎</title>
+
+  <!-- Fonte quadrada do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
+      background-size: 400% 400%;
+      animation: animBG 5s infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes animBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 5em;
+      text-shadow: 3px 3px #000;
+      margin-top: 50px;
+      animation: pisca 0.5s infinite;
+    }
+
+    @keyframes pisca {
+      0%, 100% { color: #ff0; }
+      50% { color: #0ff; }
+    }
+
+    /* Emojis de cima: girando */
+    .emoji-gira {
+      font-size: 2em;
+      animation: gira 2s linear infinite;
+      margin: 10px;
+    }
+
+    @keyframes gira {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Emojis de baixo: pulsando */
+    .emoji-pulsa {
+      font-size: 2em;
+      animation: pulsa 1s infinite;
+      margin: 10px;
+    }
+
+    @keyframes pulsa {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.5); }
+    }
+
+    .message {
+      font-size: 2em;
+      margin: 40px auto;
+      width: 80%;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border: 5px dashed #fff;
+      border-radius: 20px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SITE DOS PROS 😎</h1>
+
+  <!-- Emojis de cima (giram) -->
+  <div class="emoji-gira">📍📍📍🐼🐼🐼📍📍😽😽😽💟💟💜💟</div>
+
+  <div class="message">
+    <p>IIIIIIIIIIOOOOOOOOOO, MINHA QUERIDA <strong>GAB PEROLITO🐼📍</strong> 🎈</p>
+    <p>ESPERO QUE SEJAMOS AMIGOS PARA SEMPRE 4EVER AAAAAAA</p>
+    <p>AMO VOSE, GAB </p>
+  </div>
+
+  <!-- Emojis de baixo (pulsam) -->
+  <div class="emoji-pulsa">💜💜💜💜💟💟💟💜💜💟💟💜💜💟💜💟💜💜💟💜♾♾♾♾</div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio automático 😢
+  </audio>
+
+</body>
+</html>
